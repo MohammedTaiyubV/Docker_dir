@@ -1,0 +1,7 @@
+FROM ubuntu
+WORKDIR /app
+COPY . .
+RUN apt update
+RUN apt install python3 -y
+RUN chmod 777 run.sh
+CMD ["./run.sh"]
