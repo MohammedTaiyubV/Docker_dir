@@ -1,8 +1,7 @@
 FROM ubuntu
 WORKDIR /app
 COPY . .
-RUN apt update && apt install openjdk-21-jdk -y
-RUN apt install git -y 
-RUN apt install maven -y
-RUN chmod 777 maven.sh
-CMD ["./maven.sh"]
+RUN apt update
+RUN apt install python3 -y
+ENTRYPOINT ["python3","App1.py"]
+
