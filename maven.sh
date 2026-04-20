@@ -16,3 +16,4 @@ echo "executing"
 mv target/*.jar /app/App.jar
 java -jar /app/App.jar
 
+
